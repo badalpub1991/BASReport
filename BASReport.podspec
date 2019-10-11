@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BASReport'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'BASReport. Specially designed framework for Uffizio Reports.'
 
 # This description is used to generate tags and improve search results.
@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
 
-  s.source_files = 'Sources/BASCustomReport/**/*'
+  s.source_files = 'Source/**/*'
   s.exclude_files = "BASReport/**/*.plist"
 
    s.resource_bundles = {
-     'BASReport' => ['Sources/BASCustomReport/Themes/*.png']
+     'BASReport' => ['Source/Themes/*.png']
    }
    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
