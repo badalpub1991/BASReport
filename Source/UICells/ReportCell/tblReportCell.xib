@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tblReportCell" id="HDg-CO-EMe" customClass="tblReportCell" customModule="BASReport" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HDg-CO-EMe" id="ILE-yY-3E0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-ix-zyt">
+                        <rect key="frame" x="8" y="2" width="304" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q5s-sA-Yju">
+                        <rect key="frame" x="152.5" y="14.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ZUu-3X-U6n"/>
+                            <constraint firstAttribute="width" constant="15" id="uwj-Hc-aAw"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69m-b0-aeO">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="QvN-5G-unJ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oel-AB-IjW">
+                        <rect key="frame" x="319" y="0.0" width="1" height="43"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="VHz-8G-VXw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mOU-ix-zyt" firstAttribute="leading" secondItem="ILE-yY-3E0" secondAttribute="leading" constant="8" id="1Qs-KQ-QBi"/>
+                    <constraint firstAttribute="trailing" secondItem="oel-AB-IjW" secondAttribute="trailing" id="3Rr-wo-ba0"/>
+                    <constraint firstAttribute="trailing" secondItem="mOU-ix-zyt" secondAttribute="trailing" constant="8" id="Ldr-wM-Mc6"/>
+                    <constraint firstAttribute="bottom" secondItem="69m-b0-aeO" secondAttribute="bottom" id="Tea-AF-50c"/>
+                    <constraint firstAttribute="trailing" secondItem="69m-b0-aeO" secondAttribute="trailing" id="WCd-J1-XU2"/>
+                    <constraint firstItem="69m-b0-aeO" firstAttribute="top" secondItem="mOU-ix-zyt" secondAttribute="bottom" constant="2" id="WkR-pf-1hm"/>
+                    <constraint firstItem="mOU-ix-zyt" firstAttribute="top" secondItem="ILE-yY-3E0" secondAttribute="top" constant="2" id="e4W-pw-SyA"/>
+                    <constraint firstItem="Q5s-sA-Yju" firstAttribute="centerX" secondItem="ILE-yY-3E0" secondAttribute="centerX" id="fe5-Wy-wwA"/>
+                    <constraint firstItem="69m-b0-aeO" firstAttribute="leading" secondItem="ILE-yY-3E0" secondAttribute="leading" id="prb-rw-gml"/>
+                    <constraint firstItem="69m-b0-aeO" firstAttribute="top" secondItem="oel-AB-IjW" secondAttribute="bottom" id="sN2-a5-scE"/>
+                    <constraint firstItem="Q5s-sA-Yju" firstAttribute="centerY" secondItem="ILE-yY-3E0" secondAttribute="centerY" id="wXT-O9-A8S"/>
+                    <constraint firstItem="oel-AB-IjW" firstAttribute="top" secondItem="ILE-yY-3E0" secondAttribute="top" id="wg9-wP-dej"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="A6Z-1g-aCv"/>
+            <connections>
+                <outlet property="ReportdataHorizontalSeperatorSize" destination="QvN-5G-unJ" id="xaG-2n-oRL"/>
+                <outlet property="ReportdataVerticalSeperatorSize" destination="VHz-8G-VXw" id="SZe-EK-a19"/>
+                <outlet property="imgReport" destination="Q5s-sA-Yju" id="Nfb-1e-YXy"/>
+                <outlet property="lblReport" destination="mOU-ix-zyt" id="91Y-qj-cbn"/>
+                <outlet property="vwSeperator" destination="69m-b0-aeO" id="2w4-AS-9KX"/>
+                <outlet property="vwVerticalSeperator" destination="oel-AB-IjW" id="Bdr-hc-2b2"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="76.46176911544228"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BASCustomReport" customModule="BASReport" customModuleProvider="target">
+            <connections>
+                <outlet property="colReportSummary" destination="Zwi-Kf-NxV" id="709-71-5o2"/>
+                <outlet property="lblNoRecordFound" destination="HUt-lg-gzD" id="X7o-Eg-2Fi"/>
+                <outlet property="tblReportSummary" destination="hI9-3V-1vs" id="YBE-Js-qLu"/>
+                <outlet property="vwBackup" destination="0dR-zY-KYY" id="ZS5-sm-elg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dR-zY-KYY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hI9-3V-1vs">
+                            <rect key="frame" x="0.0" y="0.0" width="162.5" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="pvw-v0-oue"/>
+                                <outlet property="delegate" destination="-1" id="j6y-98-vdh"/>
+                            </connections>
+                        </tableView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zwi-Kf-NxV">
+                            <rect key="frame" x="162.5" y="0.0" width="212.5" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="NPH-1C-rrO">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Zhk-V9-I3W"/>
+                                <outlet property="delegate" destination="-1" id="PZ9-J3-kJ9"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hI9-3V-1vs" firstAttribute="width" secondItem="0dR-zY-KYY" secondAttribute="width" multiplier="0.3" constant="50" id="09H-KA-cCC">
+                            <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                        </constraint>
+                        <constraint firstItem="Zwi-Kf-NxV" firstAttribute="top" secondItem="0dR-zY-KYY" secondAttribute="top" id="1pU-Rb-ggh"/>
+                        <constraint firstItem="Zwi-Kf-NxV" firstAttribute="leading" secondItem="hI9-3V-1vs" secondAttribute="trailing" identifier="iphone" id="6tu-vC-a3R"/>
+                        <constraint firstAttribute="trailing" secondItem="Zwi-Kf-NxV" secondAttribute="trailing" id="8I0-Te-pru"/>
+                        <constraint firstItem="hI9-3V-1vs" firstAttribute="top" secondItem="0dR-zY-KYY" secondAttribute="top" id="9XM-dB-Rtc"/>
+                        <constraint firstAttribute="bottom" secondItem="Zwi-Kf-NxV" secondAttribute="bottom" id="E6d-ZY-fV1"/>
+                        <constraint firstItem="hI9-3V-1vs" firstAttribute="leading" secondItem="0dR-zY-KYY" secondAttribute="leading" id="GZE-7K-JoJ"/>
+                        <constraint firstAttribute="bottom" secondItem="hI9-3V-1vs" secondAttribute="bottom" id="bhU-8J-BIP"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Record Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUt-lg-gzD">
+                    <rect key="frame" x="121" y="64" width="133.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0dR-zY-KYY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JLe-ga-RjH"/>
+                <constraint firstItem="HUt-lg-gzD" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Tnn-Yg-Ili"/>
+                <constraint firstItem="0dR-zY-KYY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VRG-bU-N84"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0dR-zY-KYY" secondAttribute="trailing" id="beN-ng-YdM"/>
+                <constraint firstItem="HUt-lg-gzD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="64" id="rKJ-YO-d3y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0dR-zY-KYY" secondAttribute="bottom" id="wMW-Jx-TRe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138" y="155"/>
+        </view>
+    </objects>
+</document>

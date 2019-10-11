@@ -1,0 +1,22 @@
+{
+  "name": "BASReport",
+  "version": "0.1.0",
+  "summary": "A short description of BASReport.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/badalpub1991@gmail.com/BASReport",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "badalpub1991@gmail.com": "badal.shah@uffizio.in"
+  },
+  "source": {
+    "git": "https://github.com/badalpub1991@gmail.com/BASReport.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BASReport/Classes/**/*"
+}

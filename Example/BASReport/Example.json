@@ -1,0 +1,31 @@
+
+{
+  "result": 1,
+  "data": [
+    {
+      "running": "00:04",
+      "max_temperature": 87,
+      "no_below_ideal": 6,
+      "distance": 2.35,
+      "idle": "00:00",
+      "no_above_ideal": 0,
+      "redirect_screen_id": 2678,
+      "vehicle_id": 9915,
+      "min_temperature": 57,
+      "object": "Uffizio Object H  -  Uffizio Object H"
+    },
+    {
+      "running": "00:00",
+      "max_temperature": 0,
+      "no_below_ideal": 0,
+      "distance": 0,
+      "idle": "00:00",
+      "no_above_ideal": 0,
+      "redirect_screen_id": 2678,
+      "vehicle_id": 10135,
+      "min_temperature": 0,
+      "object": "Vento  -  Vento"
+    }
+  ],
+  "message": ""
+}

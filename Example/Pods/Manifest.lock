@@ -1,0 +1,16 @@
+PODS:
+  - BASReport (0.1.0)
+
+DEPENDENCIES:
+  - BASReport (from `../`)
+
+EXTERNAL SOURCES:
+  BASReport:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BASReport: b83d824542e7873fddf16afb0bfe73d34467ce55
+
+PODFILE CHECKSUM: 2abe5efd1572c93a622547ea09ed778b1fa6736e
+
+COCOAPODS: 1.8.1

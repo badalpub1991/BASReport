@@ -1,0 +1,6 @@
+framework module BASReport {
+  umbrella header "BASReport-umbrella.h"
+
+  export *
+  module * { export * }
+}
