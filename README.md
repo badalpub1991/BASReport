@@ -4,7 +4,6 @@
 <p align="center">
 <img src='https://github.com/badalpub1991/BASReport/blob/master/Example/BASReport/Images.xcassets/uffizio.imageset/0-1.png' width="200" />
 </p>
-# BASReport
 
 [![CI Status](https://img.shields.io/travis/badalpub1991@gmail.com/BASReport.svg?style=flat)](https://travis-ci.org/badalpub1991@gmail.com/BASReport)
 [![Version](https://img.shields.io/cocoapods/v/BASReport.svg?style=flat)](https://cocoapods.org/pods/BASReport)
