@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 
-let  BASREPORT_BUNDLE_ID = "uffizio.BASReport"
+let BASREPORT_BUNDLE = Bundle(for: BASCustomReport.self)
+
+
 
 /**
  **Delegate for Report Selection**

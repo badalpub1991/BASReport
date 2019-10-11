@@ -46,8 +46,8 @@ class CLSubReportDataCell: UICollectionViewCell {
     
     //Register Nibs
     func registerCells() {
-        tblReportSummary.register(UINib(nibName: "tblCellHeader", bundle: Bundle(identifier: BASREPORT_BUNDLE_ID)), forCellReuseIdentifier: "tblCellHeader")
-        tblReportSummary.register(UINib(nibName: "tblReportCell", bundle: Bundle(identifier: BASREPORT_BUNDLE_ID)), forCellReuseIdentifier: "tblReportCell")
+        tblReportSummary.register(UINib(nibName: "tblCellHeader", bundle: BASREPORT_BUNDLE), forCellReuseIdentifier: "tblCellHeader")
+        tblReportSummary.register(UINib(nibName: "tblReportCell", bundle: BASREPORT_BUNDLE), forCellReuseIdentifier: "tblReportCell")
         
     }
 

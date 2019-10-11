@@ -82,10 +82,10 @@ public class BASReportLayout {
     
     
     /// Set Ascending Order Image
-  public  var ASCENDING_IMAGE:UIImage = UIImage(named: "ASCImage.png", in: Bundle(identifier: BASREPORT_BUNDLE_ID), compatibleWith: nil)!
+  public  var ASCENDING_IMAGE:UIImage = UIImage(named: "ASCImage.png", in: BASREPORT_BUNDLE, compatibleWith: nil)!
     
     /// Set Descending Order Image
-   public var DESCENDING_IMAGE:UIImage = UIImage(named: "DSCImage.png", in: Bundle(identifier: BASREPORT_BUNDLE_ID), compatibleWith: nil)!
+   public var DESCENDING_IMAGE:UIImage = UIImage(named: "DSCImage.png", in: BASREPORT_BUNDLE, compatibleWith: nil)!
     
     /// Set NORecord Found Font
    public var NODATA_FONT = UIFont.systemFont(ofSize: 12.0)

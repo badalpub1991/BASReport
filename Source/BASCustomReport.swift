@@ -115,9 +115,9 @@ public class BASCustomReport: UIView {
     func registerCells() {
         self.lblNoRecordFound.font = layoutSettings.NODATA_FONT
         self.lblNoRecordFound.textColor = layoutSettings.NODATA_TEXTCOLOR
-        tblReportSummary.register(UINib(nibName: "tblCellHeader", bundle: Bundle(identifier: BASREPORT_BUNDLE_ID)), forCellReuseIdentifier: "tblCellHeader")
-        tblReportSummary.register(UINib(nibName: "tblReportCell", bundle: Bundle(identifier: BASREPORT_BUNDLE_ID)), forCellReuseIdentifier: "tblReportCell")
-        colReportSummary.register(UINib(nibName: "CLSubReportDataCell", bundle: Bundle(identifier: BASREPORT_BUNDLE_ID)), forCellWithReuseIdentifier: "CLSubReportDataCell")
+        tblReportSummary.register(UINib(nibName: "tblCellHeader", bundle: BASREPORT_BUNDLE), forCellReuseIdentifier: "tblCellHeader")
+        tblReportSummary.register(UINib(nibName: "tblReportCell", bundle: BASREPORT_BUNDLE), forCellReuseIdentifier: "tblReportCell")
+        colReportSummary.register(UINib(nibName: "CLSubReportDataCell", bundle: BASREPORT_BUNDLE), forCellWithReuseIdentifier: "CLSubReportDataCell")
         self.tblReportSummary.tag = 0
         self.arrTableView.append(self.tblReportSummary)
         
