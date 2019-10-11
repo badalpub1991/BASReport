@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BASReport_Example' do
+  pod 'BASReport', :path => '../'
+
+  target 'BASReport_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
