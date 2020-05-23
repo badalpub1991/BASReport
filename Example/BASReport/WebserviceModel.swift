@@ -2,8 +2,8 @@
 //  WebserviceModel.swift
 //  BASReport_Example
 //
-//  Created by Uffizio iMac2 on 10/10/19.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Created by iMac2 on 08/05/19.
+//  Copyright © 2019 Badal Shah. All rights reserved.
 //
 
 import Foundation
