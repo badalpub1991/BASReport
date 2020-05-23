@@ -11,6 +11,8 @@
 		170E38087DE3210C2DC7633B6A6A8CA4 /* Pods-BASReport_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C363292231C6322646B88AFCC5948A7F /* Pods-BASReport_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47D404DC4E0642A8A6D9C0834C0291D2 /* BASReport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF9247C640FB19F067B58C66EBCFAA7 /* BASReport-dummy.m */; };
 		570ED712A7FA05D1E65BC8E999A76F33 /* Pods-BASReport_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4DF4A785733472AB609777A3788D0F /* Pods-BASReport_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F56A7BD2479937000FDFF0B /* DSCImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC03A6FB2350683000CF8AE4 /* DSCImage.png */; };
+		5F56A7BE2479937400FDFF0B /* ASCImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC03A6FC2350683000CF8AE4 /* ASCImage.png */; };
 		64BB85A33A8FB6FD5606B9BDFF519436 /* Pods-BASReport_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 296CFED8D9F0CCB25C6AFDFD68F041E0 /* Pods-BASReport_Example-dummy.m */; };
 		7481D71F6E76FC15AF71608C1A57A055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		750A13C2574D31F4370D1CB12A6A2DEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -19,8 +21,6 @@
 		EC03A6F42350680D00CF8AE4 /* BASCustomReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03A6F32350680D00CF8AE4 /* BASCustomReport.swift */; };
 		EC03A6F62350681C00CF8AE4 /* BASCustomReport.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC03A6F52350681C00CF8AE4 /* BASCustomReport.xib */; };
 		EC03A6F92350682400CF8AE4 /* Ext+BASCustomReports.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03A6F82350682400CF8AE4 /* Ext+BASCustomReports.swift */; };
-		EC03A70A2350683000CF8AE4 /* DSCImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC03A6FB2350683000CF8AE4 /* DSCImage.png */; };
-		EC03A70B2350683000CF8AE4 /* ASCImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC03A6FC2350683000CF8AE4 /* ASCImage.png */; };
 		EC03A70C2350683000CF8AE4 /* BASReportLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03A6FD2350683000CF8AE4 /* BASReportLayout.swift */; };
 		EC03A70D2350683000CF8AE4 /* tblReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03A7002350683000CF8AE4 /* tblReportCell.swift */; };
 		EC03A70E2350683000CF8AE4 /* tblReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC03A7012350683000CF8AE4 /* tblReportCell.xib */; };
@@ -448,8 +448,8 @@
 				EC03A7102350683000CF8AE4 /* tblCellHeader.xib in Resources */,
 				EC03A7122350683000CF8AE4 /* CLSubReportDataCell.xib in Resources */,
 				EC03A70E2350683000CF8AE4 /* tblReportCell.xib in Resources */,
-				EC03A70B2350683000CF8AE4 /* ASCImage.png in Resources */,
-				EC03A70A2350683000CF8AE4 /* DSCImage.png in Resources */,
+				5F56A7BE2479937400FDFF0B /* ASCImage.png in Resources */,
+				5F56A7BD2479937000FDFF0B /* DSCImage.png in Resources */,
 				EC03A6F62350681C00CF8AE4 /* BASCustomReport.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
