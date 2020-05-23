@@ -1,9 +1,7 @@
 
 
 
-<p align="center">
-<img src='![ImgHeader](https://user-images.githubusercontent.com/11573422/82730188-92281680-9d1b-11ea-9b64-2a316986bc77.gif)' width="200" />
-</p>
+![ImgHeader](https://user-images.githubusercontent.com/11573422/82730188-92281680-9d1b-11ea-9b64-2a316986bc77.gif)
 
 [![CI Status](https://img.shields.io/travis/badalpub1991@gmail.com/BASReport.svg?style=flat)](https://travis-ci.org/badalpub1991@gmail.com/BASReport)
 [![Version](https://img.shields.io/cocoapods/v/BASReport.svg?style=flat)](https://cocoapods.org/pods/BASReport)
