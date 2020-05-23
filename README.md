@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src='https://github.com/badalpub1991/BASReport/blob/master/Example/BASReport/Images.xcassets/uffizio.imageset/0-1.png' width="200" />
+<img src='![ImgHeader](https://user-images.githubusercontent.com/11573422/82730188-92281680-9d1b-11ea-9b64-2a316986bc77.gif)' width="200" />
 </p>
 
 [![CI Status](https://img.shields.io/travis/badalpub1991@gmail.com/BASReport.svg?style=flat)](https://travis-ci.org/badalpub1991@gmail.com/BASReport)
