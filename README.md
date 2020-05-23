@@ -1,7 +1,12 @@
 
-# BASReport
 
-//Image and Name in Center
+
+<p align="center">
+  <img src="Images/ImgHeader.gif"  style="width: 80px;" width="80" />
+</p>
+
+<p align="center"> <b> BASReport </b></p> 
+
 
 [![CI Status](https://img.shields.io/travis/badalpub1991@gmail.com/BASReport.svg?style=flat)](https://travis-ci.org/badalpub1991@gmail.com/BASReport)
 [![Version](https://img.shields.io/cocoapods/v/BASReport.svg?style=flat)](https://cocoapods.org/pods/BASReport)
@@ -9,7 +14,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/BASReport.svg?style=flat)](https://cocoapods.org/pods/BASReport)
 
 
-
+# BASReport
 ## Requirements
 `BASReport` works on iOS 8.0+. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
@@ -28,6 +33,18 @@ pod 'BASReport'
 ```
 2. Install the pod(s) by running `pod install`.
 3. Include BASReport wherever you need it with `import BASReport"`.
+
+## Overview
+
+4 examples Added in Project
+
+<p float="left">
+    <img src=Images/UP1.gif width="200">
+    <img src=Images/UP2.gif width="200">
+    <img src=Images/UP3.gif width="200">
+    <img src=Images/UP4.gif width="200">
+
+</p>
 
 ## Getting Started
 
