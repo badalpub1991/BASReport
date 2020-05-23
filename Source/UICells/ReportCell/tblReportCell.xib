@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,7 +64,9 @@
             <connections>
                 <outlet property="ReportdataHorizontalSeperatorSize" destination="QvN-5G-unJ" id="xaG-2n-oRL"/>
                 <outlet property="ReportdataVerticalSeperatorSize" destination="VHz-8G-VXw" id="SZe-EK-a19"/>
+                <outlet property="imgHeightConstrain" destination="ZUu-3X-U6n" id="UjC-ne-gam"/>
                 <outlet property="imgReport" destination="Q5s-sA-Yju" id="Nfb-1e-YXy"/>
+                <outlet property="imgWidthConstrain" destination="uwj-Hc-aAw" id="31j-Go-lII"/>
                 <outlet property="lblReport" destination="mOU-ix-zyt" id="91Y-qj-cbn"/>
                 <outlet property="vwSeperator" destination="69m-b0-aeO" id="2w4-AS-9KX"/>
                 <outlet property="vwVerticalSeperator" destination="oel-AB-IjW" id="Bdr-hc-2b2"/>

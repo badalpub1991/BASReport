@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BASCustomReport" customModule="BASReport" customModuleProvider="target">
             <connections>
                 <outlet property="colReportSummary" destination="Zwi-Kf-NxV" id="709-71-5o2"/>
+                <outlet property="firstColumnWidth" destination="09H-KA-cCC" id="xGy-4Y-qii"/>
                 <outlet property="lblNoRecordFound" destination="HUt-lg-gzD" id="X7o-Eg-2Fi"/>
                 <outlet property="tblReportSummary" destination="hI9-3V-1vs" id="YBE-Js-qLu"/>
                 <outlet property="vwBackup" destination="0dR-zY-KYY" id="ZS5-sm-elg"/>

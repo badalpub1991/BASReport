@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "tick-box-png-checked-checkbox-icon-png-50-px-1600.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "tick-box-png-checked-checkbox-icon-png-50-px-1601.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "tick-box-png-checked-checkbox-icon-png-50-px-1602.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

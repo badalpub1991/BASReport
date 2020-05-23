@@ -2,8 +2,8 @@
 //  tblReportCell.swift
 //  BASCustomReport
 //
-//  Created by Uffizio iMac2 on 08/05/19.
-//  Copyright © 2019 Uffizio. All rights reserved.
+//  Created by iMac2 on 08/05/19.
+//  Copyright © 2019 Badal Shah. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,10 @@ class tblReportCell: UITableViewCell {
     //Constrain Outlet
     @IBOutlet weak var ReportdataHorizontalSeperatorSize: NSLayoutConstraint!
     @IBOutlet weak var ReportdataVerticalSeperatorSize: NSLayoutConstraint!
-    
+    @IBOutlet weak var imgLeftConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imgCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imgHeightConstrain: NSLayoutConstraint!
+    @IBOutlet weak var imgWidthConstrain: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,8 +40,11 @@ class tblReportCell: UITableViewCell {
         self.lblReport.textAlignment = layoutSetting.PRIMARYREPORTDATA_TEXTALLIGNMENT
         self.backgroundColor = layoutSetting.PRIMARYREPORTDATA_BACKGROUNDCOLOR
         self.vwSeperator.backgroundColor = layoutSetting.PRIMARYREPORTDATA_SEPERATORCOLOR
+        self.vwVerticalSeperator.backgroundColor = layoutSetting.PRIMARYREPORTDATA_SEPERATORCOLOR_VERTICLE
         self.ReportdataHorizontalSeperatorSize.constant = layoutSetting.REPORTDATAHORIZONTAL_SEPERATORSIZE
         self.ReportdataVerticalSeperatorSize.constant = layoutSetting.REPORTDATAVERTICAL_SEPERATORSIZE
+        self.imgHeightConstrain.constant = layoutSetting.PRIMARYREPORTDATA_IMAGE_HEIGHTWIDTH.height
+        self.imgWidthConstrain.constant = layoutSetting.PRIMARYREPORTDATA_IMAGE_HEIGHTWIDTH.width
     }
     
     func layoutSecondaryCell(layoutSetting:BASReportLayout) {
@@ -47,16 +53,33 @@ class tblReportCell: UITableViewCell {
         self.lblReport.textAlignment = layoutSetting.SECONDARYREPORTDATA_TEXTALLIGNMENT
         self.backgroundColor = layoutSetting.SECONDARYREPORTDATA_BACKGROUNDCOLOR
         self.vwSeperator.backgroundColor = layoutSetting.SECONDARYREPORTDATA_SEPERATORCOLOR
+        self.vwVerticalSeperator.backgroundColor = layoutSetting.SECONDARYREPORTDATA_SEPERATORCOLOR_VERTICLE
         self.ReportdataHorizontalSeperatorSize.constant = layoutSetting.REPORTDATAHORIZONTAL_SEPERATORSIZE
         self.ReportdataVerticalSeperatorSize.constant = layoutSetting.REPORTDATAVERTICAL_SEPERATORSIZE
+        self.imgHeightConstrain.constant = layoutSetting.SECONDARYREPORTDATA_IMAGE_HEIGHTWIDTH.height
+        self.imgWidthConstrain.constant = layoutSetting.SECONDARYREPORTDATA_IMAGE_HEIGHTWIDTH.width
     }
     
-    func configurePrimaryReportData(reportTitle:String) {
+    func configurePrimaryReportData(reportTitle:String , needImage:OrderedDictionary<String, Bool>) {
         self.lblReport.text = reportTitle
     }
+    
     
     func configureSecondaryReportData(reportTitle:String) {
         self.lblReport.text = reportTitle
+    }
+    
+    
+    func configurePrimaryReportDataImageAllignment(layoutSetting:BASReportLayout) {
+        if layoutSetting.PRIMARYREPORTDATA_IMAGEALLIGNMENT == .left {
+            if let imageConstrain = self.imgCenterConstraint {
+                imageConstrain.isActive = false
+            }
+            self.imgLeftConstraint.isActive = true
+            
+        }
+       
+        
     }
     
 }

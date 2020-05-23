@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gqJ-it-Czp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gqJ-it-Czp">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,22 +19,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9t2-hr-jpl" customClass="BASCustomReport" customModule="BASReport">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hOP-Tc-bnj">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="SsI-Ub-2Rc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="1EL-lr-K7j"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="fE8-13-TW5"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9t2-hr-jpl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="3SV-MY-eG9"/>
-                            <constraint firstItem="9t2-hr-jpl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="U9n-Fd-Hmn"/>
-                            <constraint firstAttribute="bottom" secondItem="9t2-hr-jpl" secondAttribute="bottom" id="VtA-Ci-V50"/>
-                            <constraint firstAttribute="trailing" secondItem="9t2-hr-jpl" secondAttribute="trailing" id="ZvV-oY-Piy"/>
+                            <constraint firstAttribute="trailing" secondItem="hOP-Tc-bnj" secondAttribute="trailing" id="4dN-y6-TYF"/>
+                            <constraint firstItem="hOP-Tc-bnj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="K3N-A4-qVu"/>
+                            <constraint firstItem="hOP-Tc-bnj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Te6-Gi-HWv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hOP-Tc-bnj" secondAttribute="bottom" id="s45-3X-oTb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Na8-3g-ayG"/>
                     <connections>
-                        <outlet property="basReport" destination="9t2-hr-jpl" id="dw0-tv-aM4"/>
+                        <outlet property="tblView" destination="hOP-Tc-bnj" id="LEC-5p-tKa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -58,6 +67,189 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ox-HP-ksd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--Report Default-->
+        <scene sceneID="GSp-c5-PDI">
+            <objects>
+                <viewController storyboardIdentifier="BASReportDefault" id="PYT-6k-49U" customClass="BASReportDefault" customModule="BASReport_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QuW-1j-XKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uyv-Yj-1aw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="afm-MB-bWU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9c-yd-hdI" customClass="BASCustomReport" customModule="BASReport">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PYT-6k-49U" id="MuG-Zj-0sX"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W9c-yd-hdI" firstAttribute="top" secondItem="QuW-1j-XKe" secondAttribute="bottom" id="3eC-JI-wVK"/>
+                            <constraint firstItem="W9c-yd-hdI" firstAttribute="leading" secondItem="afm-MB-bWU" secondAttribute="leading" id="Z6E-zX-rId"/>
+                            <constraint firstItem="Uyv-Yj-1aw" firstAttribute="top" secondItem="W9c-yd-hdI" secondAttribute="bottom" id="dSo-UX-FOE"/>
+                            <constraint firstAttribute="trailing" secondItem="W9c-yd-hdI" secondAttribute="trailing" id="iJo-KN-5dX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LA6-Ox-CDl"/>
+                    <connections>
+                        <outlet property="basReport" destination="W9c-yd-hdI" id="4dE-Lh-IuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4N-OQ-gkj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Report With Modifications-->
+        <scene sceneID="T5f-g6-RTi">
+            <objects>
+                <viewController storyboardIdentifier="BASReportWithModifications" id="hZk-7y-y4S" customClass="BASReportWithModifications" customModule="BASReport_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="daQ-fp-Edk"/>
+                        <viewControllerLayoutGuide type="bottom" id="zpN-0A-t96"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TmA-df-7hN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hde-84-hV3" customClass="BASCustomReport" customModule="BASReport">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hZk-7y-y4S" id="lRX-0b-9mo"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hde-84-hV3" firstAttribute="leading" secondItem="TmA-df-7hN" secondAttribute="leading" id="8KP-kb-7EG"/>
+                            <constraint firstAttribute="trailing" secondItem="Hde-84-hV3" secondAttribute="trailing" id="DxT-qh-PCp"/>
+                            <constraint firstItem="Hde-84-hV3" firstAttribute="top" secondItem="daQ-fp-Edk" secondAttribute="bottom" id="HbL-bc-bpm"/>
+                            <constraint firstItem="zpN-0A-t96" firstAttribute="top" secondItem="Hde-84-hV3" secondAttribute="bottom" id="Zbw-Oc-2Bu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WJ4-5c-F8N"/>
+                    <connections>
+                        <outlet property="basReport" destination="Hde-84-hV3" id="wKi-7z-6mr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvo-hg-zmi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Report With Image-->
+        <scene sceneID="zVY-jZ-IBb">
+            <objects>
+                <viewController storyboardIdentifier="BASReportWithImage" id="OFn-i1-Epj" customClass="BASReportWithImage" customModule="BASReport_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fSK-gX-GTd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dxe-NY-kb8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yH2-wf-oOv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJW-Rh-7vZ" customClass="BASCustomReport" customModule="BASReport">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OFn-i1-Epj" id="Zz1-W7-Vir"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EJW-Rh-7vZ" firstAttribute="top" secondItem="fSK-gX-GTd" secondAttribute="bottom" id="8mV-1W-gNN"/>
+                            <constraint firstItem="EJW-Rh-7vZ" firstAttribute="leading" secondItem="yH2-wf-oOv" secondAttribute="leading" id="D8B-e5-SqU"/>
+                            <constraint firstAttribute="trailing" secondItem="EJW-Rh-7vZ" secondAttribute="trailing" id="MeQ-aX-jNR"/>
+                            <constraint firstItem="Dxe-NY-kb8" firstAttribute="top" secondItem="EJW-Rh-7vZ" secondAttribute="bottom" id="cXl-FH-S2T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t8w-sh-6VY"/>
+                    <connections>
+                        <outlet property="basReport" destination="EJW-Rh-7vZ" id="fX3-j5-ezP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDS-yi-Y17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Get SelectionVC-->
+        <scene sceneID="6Uy-QE-sUw">
+            <objects>
+                <viewController storyboardIdentifier="GetSelectionVC" id="mbe-vK-3iy" customClass="GetSelectionVC" customModule="BASReport_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wRv-oY-I82"/>
+                        <viewControllerLayoutGuide type="bottom" id="p45-6m-QEf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iq5-xV-Ycj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-25-p0d">
+                                <rect key="frame" x="10" y="10" width="355" height="647"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mkv-25-p0d" secondAttribute="trailing" constant="10" id="9Gt-Ch-bk5"/>
+                            <constraint firstItem="Mkv-25-p0d" firstAttribute="leading" secondItem="iq5-xV-Ycj" secondAttribute="leading" constant="10" id="AhA-d9-fto"/>
+                            <constraint firstItem="Mkv-25-p0d" firstAttribute="top" secondItem="wRv-oY-I82" secondAttribute="bottom" constant="10" id="Jea-Hz-PFv"/>
+                            <constraint firstItem="p45-6m-QEf" firstAttribute="top" secondItem="Mkv-25-p0d" secondAttribute="bottom" constant="10" id="ulj-Vp-Cjx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblSelection" destination="Mkv-25-p0d" id="4rU-0j-p0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJZ-v3-zTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="-565"/>
+        </scene>
+        <!--Report With Custom Cell-->
+        <scene sceneID="eJ2-j6-dcz">
+            <objects>
+                <viewController storyboardIdentifier="BASReportWithCustomCell" id="jMQ-HU-8eW" customClass="BASReportWithCustomCell" customModule="BASReport_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gy1-7n-UyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="n8B-wI-4dR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NXg-UO-zok">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uh6-YF-yWa" customClass="BASCustomReport" customModule="BASReport">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jMQ-HU-8eW" id="rLd-2P-Q6d"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n8B-wI-4dR" firstAttribute="top" secondItem="Uh6-YF-yWa" secondAttribute="bottom" id="5ug-Yv-PCe"/>
+                            <constraint firstAttribute="trailing" secondItem="Uh6-YF-yWa" secondAttribute="trailing" id="BET-l1-9Lz"/>
+                            <constraint firstItem="Uh6-YF-yWa" firstAttribute="top" secondItem="gy1-7n-UyS" secondAttribute="bottom" id="CiK-RB-1CS"/>
+                            <constraint firstItem="Uh6-YF-yWa" firstAttribute="leading" secondItem="NXg-UO-zok" secondAttribute="leading" id="R69-oc-2Kx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V5p-Ar-n97"/>
+                    <connections>
+                        <outlet property="basReport" destination="Uh6-YF-yWa" id="TyL-Cg-Gdj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jv1-b7-EMF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

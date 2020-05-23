@@ -2,8 +2,8 @@
 //  CLSubReportDataCell.swift
 //  BASCustomReport
 //
-//  Created by Uffizio iMac2 on 08/05/19.
-//  Copyright © 2019 Uffizio. All rights reserved.
+//  Created by iMac2 on 08/05/19.
+//  Copyright © 2019 Badal Shah. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,14 @@ class CLSubReportDataCell: UICollectionViewCell {
 
     /// All UIRelated Setting -> Headercolor , seperator Color , HeaderSize , SeperatorSize Bla Bla
     var layoutSettings = BASReportLayout()
-    var delegate:BASReportDeleate?
+    var delegate:BASReportDelegate?
+      var basReportDatasource: BASReportDatasource?
+     var arrIndexPath : [Int] = []
+    
+    weak var basReportHeaderDatasource: BASReportHeaderDatasource?
+      var arrCustomHeaderSectionForColumn : [Int] = []
+    
+   
     
     
     //Outlets
@@ -50,11 +57,22 @@ class CLSubReportDataCell: UICollectionViewCell {
         tblReportSummary.register(UINib(nibName: "tblReportCell", bundle: BASREPORT_BUNDLE), forCellReuseIdentifier: "tblReportCell")
         
     }
+    
+    func registerCellWithIdentifier(arrCustomCell:[BASReportCustomCell]) {
+        for customCell in arrCustomCell {
+            self.tblReportSummary.register(customCell.0, forCellReuseIdentifier: customCell.1)
+        }
+    }
 
 }
 
 extension CLSubReportDataCell : UITableViewDataSource , UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if let customHeaderDataSource = basReportHeaderDatasource {
+            if arrCustomHeaderSectionForColumn.contains(itemIndex.item + 1){
+                return customHeaderDataSource.basReport(tableView, viewForHeaderInSection: section, column: itemIndex.item + 1)
+            }
+        }
         let cell:tblCellHeader = tableView.dequeueReusableCell(withClass: tblCellHeader.self)
         cell.validateSelectedLabel = self.validateSelectedLabel
         
@@ -82,9 +100,16 @@ extension CLSubReportDataCell : UITableViewDataSource , UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let customDataSource = basReportDatasource {
+            if arrIndexPath.contains(itemIndex.item+1){
+                return customDataSource.basReport(tableView, cellForRowAt: indexPath, column: itemIndex.item+1)               
+            }
+        }
         let cell:tblReportCell = tableView.dequeueReusableCell(withClass: tblReportCell.self)
         cell.layoutSecondaryCell(layoutSetting: self.layoutSettings)
         cell.selectionStyle = .none
+        cell.contentView.backgroundColor = UIColor.clear
+        cell.lblReport.accessibilityIdentifier = "detail_label"
         
         let key = Array(arrGHeader.keys)[itemIndex.item + 1]
         if arrGHeader[key] == true {
@@ -108,11 +133,11 @@ extension CLSubReportDataCell : UITableViewDataSource , UITableViewDelegate {
             cell.lblReport.textAlignment = arrGKeys[itemIndex.item + 1].1
             if arrGKeys[itemIndex.item + 1].3 != nil {
                 if !isSubCellClickable {
-                cell.contentView.backgroundColor = arrGKeys[itemIndex.item + 1].3
+                    cell.contentView.backgroundColor = arrGKeys[itemIndex.item + 1].3
                 } else {
                     cell.lblReport.textColor = arrGKeys[itemIndex.item + 1].3
                 }
-            }   
+            }
         }
         
         
@@ -125,7 +150,8 @@ extension CLSubReportDataCell : UITableViewDataSource , UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate?.getItemIndexPath?(indexPath: indexPath, tableHint: tableView.accessibilityHint!, basReport: self.basCustomReport)
+        guard let subDataDelegate = self.delegate else {return}
+        subDataDelegate.didSelectCellAt?(indexPath: indexPath, tableHint: tableView.accessibilityHint ?? "", basReport: self.basCustomReport)
     }
     
     

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BASReport'
-  s.version          = '1.0.2'
-  s.summary          = 'BASReport. Specially designed framework for Uffizio Reports.'
+  s.version          = '1.0.3'
+  s.summary          = 'BASReport is generalised report framework or you can also use it as a spreadSheet as noraml Use..'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "This is BASReport Framework created by BADAL SHAH. This reports contain particular reportformat which is very useful to create particular type of layout or UI. If you want to extend the feature of add some functionalty fill free to contact me on Email - badalpub1991@gmail.com or MobileNumber - 7737765555  or skype - badal1111991."
+  s.description      = "This is BASReport Framework created by BADAL SHAH. This reports contain particular reportformat which is very useful to create particular type of layout or UI specially like excelSheet. If you want to extend the feature of add some functionalty fill free to contact me on Email - badalpub1991@gmail.com or MobileNumber - 7737765555  or skype - badal1111991."
 
   s.homepage         = 'https://github.com/badalpub1991/BASReport'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/badalpub1991/BASReport.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.facebook.com/badal1991'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
   s.swift_version = '4.2'
 
   s.source_files = 'Source/**/*'

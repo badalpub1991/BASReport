@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		01951C610B893EFBEB8C6F8D /* Pods_BASReport_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C964DD2DEB24F6E7FF6FDC1F /* Pods_BASReport_Tests.framework */; };
 		43835BBE5AB8F8751740AE08 /* Pods_BASReport_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2369BCBE2CA7187530646A2 /* Pods_BASReport_Example.framework */; };
+		5F28AE772477B2A600AAA15F /* BASReportDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE762477B2A600AAA15F /* BASReportDefault.swift */; };
+		5F28AE792477B97600AAA15F /* BASReportWithModifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE782477B97600AAA15F /* BASReportWithModifications.swift */; };
+		5F28AE7B2477E92600AAA15F /* Example2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F28AE7A2477E92600AAA15F /* Example2.json */; };
+		5F28AE7D2477EE1D00AAA15F /* WCLockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE7C2477EE1D00AAA15F /* WCLockModel.swift */; };
+		5F28AE7F2477F38300AAA15F /* BASReportWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE7E2477F38300AAA15F /* BASReportWithImage.swift */; };
+		5F28AE8124780A2C00AAA15F /* GetSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE8024780A2C00AAA15F /* GetSelectionVC.swift */; };
+		5F28AE832478257F00AAA15F /* BASReportWithCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE822478257E00AAA15F /* BASReportWithCustomCell.swift */; };
+		5F28AE87247825C100AAA15F /* tblCellWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28AE85247825C100AAA15F /* tblCellWithImage.swift */; };
+		5F28AE88247825C100AAA15F /* tblCellWithImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F28AE86247825C100AAA15F /* tblCellWithImage.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -31,6 +40,15 @@
 
 /* Begin PBXFileReference section */
 		2A88A7CBEB02FC5ECB127EB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5F28AE762477B2A600AAA15F /* BASReportDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASReportDefault.swift; sourceTree = "<group>"; };
+		5F28AE782477B97600AAA15F /* BASReportWithModifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASReportWithModifications.swift; sourceTree = "<group>"; };
+		5F28AE7A2477E92600AAA15F /* Example2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Example2.json; sourceTree = "<group>"; };
+		5F28AE7C2477EE1D00AAA15F /* WCLockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCLockModel.swift; sourceTree = "<group>"; };
+		5F28AE7E2477F38300AAA15F /* BASReportWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASReportWithImage.swift; sourceTree = "<group>"; };
+		5F28AE8024780A2C00AAA15F /* GetSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSelectionVC.swift; sourceTree = "<group>"; };
+		5F28AE822478257E00AAA15F /* BASReportWithCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASReportWithCustomCell.swift; sourceTree = "<group>"; };
+		5F28AE85247825C100AAA15F /* tblCellWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblCellWithImage.swift; sourceTree = "<group>"; };
+		5F28AE86247825C100AAA15F /* tblCellWithImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tblCellWithImage.xib; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BASReport_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BASReport_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F28AE842478258500AAA15F /* customCellTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5F28AE85247825C100AAA15F /* tblCellWithImage.swift */,
+				5F28AE86247825C100AAA15F /* tblCellWithImage.xib */,
+			);
+			name = customCellTableView;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				EC03A6EF2350674800CF8AE4 /* Example.json */,
+				5F28AE7A2477E92600AAA15F /* Example2.json */,
 				EC03A6EA235066F900CF8AE4 /* Model */,
 				EC03A6E9235066F000CF8AE4 /* View */,
 				EC03A6E8235066E100CF8AE4 /* Controller */,
@@ -158,6 +186,11 @@
 			children = (
 				EC03A6ED2350672500CF8AE4 /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				5F28AE762477B2A600AAA15F /* BASReportDefault.swift */,
+				5F28AE782477B97600AAA15F /* BASReportWithModifications.swift */,
+				5F28AE7E2477F38300AAA15F /* BASReportWithImage.swift */,
+				5F28AE8024780A2C00AAA15F /* GetSelectionVC.swift */,
+				5F28AE822478257E00AAA15F /* BASReportWithCustomCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -165,6 +198,7 @@
 		EC03A6E9235066F000CF8AE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5F28AE842478258500AAA15F /* customCellTableView */,
 				EC03A6EB2350671300CF8AE4 /* Main.storyboard */,
 			);
 			name = View;
@@ -174,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				EC03A6F12350675200CF8AE4 /* WebserviceModel.swift */,
+				5F28AE7C2477EE1D00AAA15F /* WCLockModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -242,11 +277,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1140;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1140;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -277,8 +312,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC03A6F02350674800CF8AE4 /* Example.json in Resources */,
+				5F28AE7B2477E92600AAA15F /* Example2.json in Resources */,
 				EC03A6EC2350671300CF8AE4 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				5F28AE88247825C100AAA15F /* tblCellWithImage.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,8 +399,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F28AE772477B2A600AAA15F /* BASReportDefault.swift in Sources */,
+				5F28AE7F2477F38300AAA15F /* BASReportWithImage.swift in Sources */,
 				EC03A6EE2350672600CF8AE4 /* ViewController.swift in Sources */,
+				5F28AE792477B97600AAA15F /* BASReportWithModifications.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5F28AE7D2477EE1D00AAA15F /* WCLockModel.swift in Sources */,
+				5F28AE832478257F00AAA15F /* BASReportWithCustomCell.swift in Sources */,
+				5F28AE8124780A2C00AAA15F /* GetSelectionVC.swift in Sources */,
+				5F28AE87247825C100AAA15F /* tblCellWithImage.swift in Sources */,
 				EC03A6F22350675200CF8AE4 /* WebserviceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,7 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -523,7 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -544,7 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BASReport_Example.app/BASReport_Example";
 			};
 			name = Debug;
@@ -562,7 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BASReport_Example.app/BASReport_Example";
 			};
 			name = Release;

@@ -2,8 +2,8 @@
 //  Ext+BASCustomReports.swift
 //  BASCustomReport
 //
-//  Created by Uffizio iMac2 on 08/05/19.
-//  Copyright © 2019 Uffizio. All rights reserved.
+//  Created by iMac2 on 08/05/19.
+//  Copyright © 2019 Badal Shah. All rights reserved.
 //
 
 import Foundation
