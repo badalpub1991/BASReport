@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.swift_version = '4.2'
 
-  s.source_files = 'Source/**/*'
+  s.source_files = 'Source/**/*.{h,m,swift,.png}'
   s.exclude_files = "BASReport/**/*.plist"
 
    s.resource_bundles = {
-     'BASReport' => ['Source/Themes/**/*.png']
+     'BASReport' => ['Source/Themes/**/*']
    }
    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
