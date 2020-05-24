@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "BASReport/**/*.plist"
 
    s.resource_bundles = {
-     'BASReport' => ['Source/Themes/**/*']
+     'BASReport' => ['Source/Themes/**/*.png']
    }
    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
